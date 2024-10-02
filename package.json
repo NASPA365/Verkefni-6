@@ -4,11 +4,14 @@
   "description": "Lausn á verkefni 6",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "browser-sync": "browser-sync start --server --files index.html styles.css",
+    "sass": "sass styles.scss styles.css",
+    "sass-watch": "sass *.scss styles.css -watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^3.0.3"
+    "browser-sync": "^3.0.3",
+    "sass": "^1.79.4"
   }
 }
