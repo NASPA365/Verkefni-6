@@ -1,5 +1,4 @@
-/** Fótur **/
-  
+
 footer {
   display: grid;
   justify-items: center;
@@ -10,25 +9,25 @@ footer {
   background-color: var(--color-background-secondary);
   text-align: center;
 }
-  
+
 footer > .content {
   display: grid;
   justify-content: center;
   gap: var(--vertical-space);
 }
-  
+
 footer > section {
   text-align: center;
 }
-  
+
 footer ul {
   list-style: none;
 }
-  
+
 footer h2 {
   margin-bottom: var(--spacing);
 }
-  
+
 @media (width >= 700px) {
   footer > .content {
     grid-template-columns: repeat(var(--columns), 1fr);
@@ -36,18 +35,8 @@ footer h2 {
     width: var(--width-offset);
     max-width: var(--max-width);
   }
-  
+
   footer .content > section {
     grid-column: span 4;
   }
-}
-  
-/*** Opnunartími ***/
-
-dt {
-  font-weight: bold;
-}
-  
-dd {
-  margin-bottom: var(--spacing);
 }

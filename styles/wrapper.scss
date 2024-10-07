@@ -1,10 +1,12 @@
+@import '../styles/config';
+
 /**
-* Eftirfarandi setur upp grunn umbrot (layout) síðu með flexbox.
-* Við förum yfir flexbox í viku 4 en þangað til er hægt að nota þetta
-* sem grunn og án breytinga.
-* Athugið að til þess að þetta virki þar að setja <div class="wrapper"> utan um allt efni 
-* innan <body>.
-*/
+ * Eftirfarandi setur upp grunn umbrot (layout) síðu með flexbox.
+ * Við förum yfir flexbox í viku 4 en þangað til er hægt að nota þetta
+ * sem grunn og án breytinga.
+ * Athugið að til þess að þetta virki þar að setja <div class="wrapper"> utan um allt efni 
+ * innan <body>.
+ */
 .wrapper {
   /* Notum grid hér til að setja upp bil á milli header, meginmáls og fóts */
   display: grid;
@@ -19,7 +21,7 @@
   background-color: var(--color-background-primary);
 }
 
-@media (width >= 800px) {
+@media (width >= $min-width) {
   .wrapper {
     gap: var(--vertical-space-large);
   }
@@ -34,7 +36,7 @@
   margin-bottom: var(--spacing);
 }
 
-@media (width >= 800px) {
+@media (width >= $min-width) {
   .wrapper .wrapper-content {
     display: grid;
     grid-template-columns: repeat(var(--columns), 1fr);
